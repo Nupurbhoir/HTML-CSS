@@ -1,0 +1,58 @@
+/* Reset & Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffe4e1, #e6f7ff);
+    color: #444;
+}
+
+/* Container */
+.bio-container {
+    max-width: 700px;
+    margin: 60px auto;
+    background-color: #fff0f5;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f3c6d4;
+    text-align: center;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ce9aede2;
+    margin-bottom: 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 30px;
+    color: #a0522d;
+    margin: 10px 0;
+}
+
+/* Tagline */
+.tagline {
+    font-size: 16px;
+    color: #6b6b6b;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Bio Text */
+.bio-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 15px 0;
+    color: #5b5b5b;
+}
+
+/* Optional: Add hover effect */
+.profile-pic:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}

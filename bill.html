@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Bill</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .bill-container {
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .bill-container h2 {
+            text-align: center;
+            color: #375a7f;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #d0d7de;
+            padding: 14px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #dceefb;
+            color: #2c3e50;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #f5fafd;
+        }
+
+        tfoot td {
+            background-color: #e3fcec;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bill-container">
+        <h2>Customer Invoice</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Unit Price (₹)</th>
+                <th>Total (₹)</th>
+            </tr>
+            <tr>
+                <td>Notebook</td>
+                <td>2</td>
+                <td>50</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Pen</td>
+                <td>5</td>
+                <td>10</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Folder</td>
+                <td>1</td>
+                <td>30</td>
+                <td>30</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Grand Total</td>
+                    <td>₹180</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+</html>

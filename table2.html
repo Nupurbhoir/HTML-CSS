@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,
+        td {
+            padding: 20px;
+            text-align: center;
+        }
+        th {
+            background-color: #add8e6; /* Light blue */
+        }
+        td {
+            background-color: #f0f0f0; /* Light gray */
+        }
+        .nested-table th {
+            background-color: #d0e6ff;
+        }
+        .nested-table td {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h2>Cell that spans two columns with Nested Table</h2>
+    <table style="width: 100%;">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+            <td>Nupur Bhoir</td>
+            <td colspan="2">
+                <table class="nested-table" style="width: 100%;">
+                    <tr>
+                        <th>Primary</th>
+                        <th>Secondary</th>
+                    </tr>
+                    <tr>
+                        <td>9123456789</td>
+                        <td>9876543210</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Email Info</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">nupur@example.com</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Shweta Sharma</td>
+            <td>9111122233</td>
+            <td>9333344455</td>
+        </tr>
+        <tr>
+            <td>Grishma Thakare</td>
+            <td>9000011122</td>
+            <td>9444455566</td>
+        </tr>
+        <tr>
+            <td>Sakshi Pokhriyal</td>
+            <td>9888877766</td>
+            <td>9777666555</td>
+        </tr>
+    </table>
+</body>
+</html>
